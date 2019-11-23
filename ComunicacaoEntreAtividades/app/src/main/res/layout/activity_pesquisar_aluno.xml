@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PesquisarAluno"
+    android:background="@color/Grey"
+    android:gravity="top"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="30dp"
+            android:id="@+id/atctv"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            android:hint="Pesquisa por CPF"
+            android:inputType="number"
+            />
+        <Button
+            android:id="@+id/btnRealizarPesquisa"
+            android:layout_marginTop="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesquisar"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btnEditarAlunoPesquisa"
+            android:text="Editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/btnExcluirAlunoPesquisa"
+            android:text="Excluir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            android:textSize="20dp"
+            android:hint="Email"
+            android:id="@+id/tvPesqEmail"
+            />
+
+        <EditText
+            android:hint="Nome"
+            android:textColorHint="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/White"
+            android:textSize="20dp"
+            android:id="@+id/tvPesqNome"
+            />
+        <EditText
+            android:hint="Idade"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColorHint="@color/White"
+            android:textColor="@color/White"
+            android:textSize="20dp"
+            android:id="@+id/tvPesqIdade"
+            android:inputType="number"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColorHint="@color/White"
+            android:textColor="@color/White"
+            android:textSize="20dp"
+            android:hint="CPF"
+            android:id="@+id/tvPesqCPF"
+            android:inputType="number"
+            />
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:id="@+id/BtnSaveEditPesquisar"
+            />
+
+        <ImageView
+            android:layout_width="115dp"
+            android:layout_height="78dp"
+            android:background="@drawable/school" />
+    </LinearLayout>
+
+</LinearLayout>
